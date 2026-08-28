@@ -1,4 +1,4 @@
-package com.mc6.client;
+package com.github.kakaliabikakacode.mc6client;
 
 import java.util.ArrayList;
 import java.util.List;
