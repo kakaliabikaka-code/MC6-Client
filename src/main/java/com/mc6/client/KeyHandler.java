@@ -1,7 +1,6 @@
-package com.mc6.client;
+package com.github.kakaliabikakacode.mc6client;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.InputEvent;
 import org.lwjgl.input.Keyboard;
