@@ -1,4 +1,4 @@
-package com.mc6.client;
+package com.github.kakaliabikakacode.mc6client;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -13,13 +13,11 @@ public class MC6Client {
 
     public static MC6Client INSTANCE;
     private ModuleManager moduleManager;
-    private EventManager eventManager;
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
         INSTANCE = this;
         this.moduleManager = new ModuleManager();
-        this.eventManager = new EventManager();
         
         MinecraftForge.EVENT_BUS.register(new KeyHandler());
         MinecraftForge.EVENT_BUS.register(new HUDManager());
