@@ -1,8 +1,7 @@
-package com.mc6.client;
+package com.github.kakaliabikakacode.mc6client;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
-import net.minecraft.client.settings.KeyBinding;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import org.lwjgl.input.Mouse;
@@ -75,13 +74,10 @@ public class HUDManager {
         Gui.drawRect(x + (size * 2) + 4, y + size + 2, x + (size * 3) + 4, y + (size * 2) + 2, d ? new Color(255, 20, 147, 180).getRGB() : new Color(0, 0, 0, 120).getRGB());
         mc.fontRendererObj.drawString("D", x + (size * 2) + 10, y + size + 8, -1);
 
-        Gui.drawRect(x, y + (size * 2) + 4, x + (size * 1.5) + 1, y + (size * 2.5) + 4, lmb ? new Color(255, 20, 147, 180).getRGB() : new Color(0, 0, 0, 120).getRGB());
+        Gui.drawRect(x, y + (size * 2) + 4, x + (int)(size * 1.5) + 1, y + (int)(size * 2.5) + 4, lmb ? new Color(255, 20, 147, 180).getRGB() : new Color(0, 0, 0, 120).getRGB());
         mc.fontRendererObj.drawString("LMB", x + 7, y + (size * 2) + 9, -1);
 
-        Gui.drawRect(x + (size * 1.5) + 3, y + (size * 2) + 4, x + (size * 3) + 4, y + (size * 2.5) + 4, rmb ? new Color(255, 20, 147, 180).getRGB() : new Color(0, 0, 0, 120).getRGB());
+        Gui.drawRect(x + (int)(size * 1.5) + 3, y + (size * 2) + 4, x + (size * 3) + 4, y + (int)(size * 2.5) + 4, rmb ? new Color(255, 20, 147, 180).getRGB() : new Color(0, 0, 0, 120).getRGB());
         mc.fontRendererObj.drawString("RMB", x + (size * 2) + 8, y + (size * 2) + 9, -1);
     }
-}
-
-class EventManager {
 }
